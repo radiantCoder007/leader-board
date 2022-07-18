@@ -22,6 +22,7 @@ nav {
     background-color: #562EFF;
     display: flex;
     justify-content: center;
+
 }
 
 .navbar {
@@ -30,6 +31,8 @@ nav {
     justify-content: space-between;
     height: 94px;
     width: 870px;
+    /* position: sticky; */
+
 
 }
 
@@ -117,7 +120,6 @@ nav {
 }
 
 hr {
-    width: 807px;
     color: #D1D1D1;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -187,10 +189,6 @@ hr {
 .courses-all {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-
-
-
 }
 
 .single-course {
@@ -248,5 +246,34 @@ hr {
     font-size: 14.6913px;
     line-height: 20px;
     color: #FF4A60;
+}
 
+/* media query */
+
+@media screen and (max-width:575px) {
+
+    nav {
+        display: none;
+    }
+
+    .top-section-content {
+        width: 100%;
+
+    }
+
+    .player-details {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .courses-all {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
