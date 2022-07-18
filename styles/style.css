@@ -39,6 +39,12 @@ nav {
     align-items: center;
 }
 
+.navbar .logo p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
 .logo img {
     width: 40.42px;
     height: 51px;
